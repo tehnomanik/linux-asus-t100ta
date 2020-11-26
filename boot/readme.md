@@ -1,3 +1,11 @@
+Modifying the installation medium to boot on 32-bit UEFI
+
+Yes, some genius came up with the idea to put a 32-bit UEFI on a 64-bit device. The Linux kernel shipped with Ubuntu 14.10 supports mixed-mode, so kernel-wise it is no longer a problem. But the Ubuntu 14.10 (Vivid Vervid) ISO does not contain a 32-bit bootloader. Luckily this can be easily fixed.
+
+    Get a bootia32.efi file, I used this one from John Wells.
+    Copy the file into the EFI/BOOT/ folder on the boot medium.
+
+
 32-bit efi for Asus T100
 ========================
 
